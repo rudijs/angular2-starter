@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"sourceMap": true,
+		"removeComments": false,
+		"outDir": "build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+	},
+	"exclude": [
+		"node_modules"
+	],
+   "filesGlob": []
+}

@@ -1,0 +1,29 @@
+{
+  "extends": "google",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "inject": true,
+    "ON_TEST": true,
+    "angular": true
+  },
+  "rules": {
+    "require-jsdoc": [
+      2,
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true
+        }
+      }
+    ],
+    "object-curly-spacing": [
+      2,
+      "always"
+    ]
+  }
+}
