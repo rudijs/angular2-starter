@@ -40,24 +40,29 @@ body
   flex-direction: column
   color: primary-text-color
 
-html
-  font-size: 21px
-
 h1, h2, h3, h4, h5, h6
   font-family: Julius Sans One
-  font-size: 1.3rem
-  font-weight: bold
+  // font-size: 1.3rem
+  // font-weight: bold
 
-p
-  font-size: 1em
+p, a
+  font-size: 1.3rem
 
 header
   position: fixed
   width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: baseline
   background-color: dark-primary-color
-  padding-left: 20px
+  padding-left: 2rem
   border-bottom: 2px solid primary-text-color
   color: text-primary-color
 
+nav
+  margin-right: 4rem
+
 .wrapper
-  margin-top: 5rem
+  max-width: 800px
+  margin: 6rem auto 0 auto
+  padding: 0 1rem 0 1.5rem

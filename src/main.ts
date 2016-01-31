@@ -2,7 +2,7 @@ import 'reflect-metadata';
 
 // import {enableProdMode} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
-// enableProdMode();
+import {ROUTER_PROVIDERS} from 'angular2/router';
 
 import {App} from './app/app'
 // font faces and icons available site wide
@@ -11,7 +11,9 @@ import {App} from './app/app'
 // webpack will url-inline them into bundle.js
 import './assets/fonts/font_faces.styl';
 
-
-
-bootstrap(App);
-
+bootstrap(
+  App,
+  [
+    ROUTER_PROVIDERS,
+  ]
+);

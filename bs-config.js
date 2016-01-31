@@ -12,6 +12,8 @@
  |
  |
  */
+var historyApiFallback = require('connect-history-api-fallback');
+
 module.exports = {
     "ui": {
         "port": 3001,
@@ -26,7 +28,7 @@ module.exports = {
     },
     "proxy": false,
     "port": 3000,
-    "middleware": false,
+    "middleware": [ historyApiFallback() ],
     "serveStatic": [],
     "ghostMode": {
         "clicks": true,
